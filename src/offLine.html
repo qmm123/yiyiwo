@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="scripts/css/bootstrap.css">
+	<link rel="stylesheet" href="styles/offLine.css">
+	<script>
+		var html = document.documentElement;
+		var hWidth = html.getBoundingClientRect().width;
+		html.style.fontSize = hWidth/15 + "px";
+		console.log(hWidth)
+	</script>
+</head>
+<body>
+	<div id="offLine">
+		<!--头部区域-->
+		<header id="header">
+			<a href="javascript:;" class="back"><span class="glyphicon glyphicon-menu-left"></span>返回</a>蚁蚁窝<a class="option"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+		</header>
+		<!--/头部区域-->
+		<!--搜索区域-->
+		<section id="search">
+			<a class="marker"><span class="glyphicon glyphicon-map-marker"></span>北京</a>
+
+			<div class="search"><input type="text" placeholder="请输入分类、商品、品牌搜索"><span class="glyphicon glyphicon-search"></span><img src="images/search.png"/></div>
+			<a class="right"><img src="images/news.png"></a>
+		</section>
+		<!--/搜索区域-->
+		<!--轮播图-->
+		<section id="carousel">
+			<ul>
+				<li><a><img src="images/offLine-carousel1.png" /></a></li>
+				<li><a><img src="images/offLine-carousel2.png" /></a></li>
+			</ul>
+			<div id="ico" class="ico">
+				<a  class="active" href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+		</section>
+		<!--/轮播图-->
+
+		<!--list-->
+		<section id="list">
+			<ul>
+				<li><a href="javascript:;"></a><img src=""/><span>美食</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>宾馆酒店</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>休闲娱乐</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>地方特产</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>天天特价</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>发现好货</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>5折专区</span></li>
+				<li><a href="javascript:;"></a><img src=""/><span>线上商城</span></li>
+			</ul>
+		</section>
+		<!--/list-->
+	</div>
+	<script>
+		var oIco = document.getElementById("ico");
+		var aBtn = oIco.getElementsByTagName("a");
+		var oSlide = document.getElementById("carousel");
+		var oUl = oSlide.getElementsByTagName("ul");
+		var oLi = oUl[0].getElementsByTagName("li");
+		var baseWidth = hWidth
+		oUl[0].style.width=baseWidth*oLi.length + "px";
+		var iNow = 0;
+		for( var i = 0; i<aBtn.length; i++){
+			aBtn[i].index = i;
+			aBtn[i].onclick = function(){
+				move(this.index);
+			}
+		}
+		var curIndex = 0;
+		var timeInterval = 1000;
+		setInterval(change,timeInterval);
+
+		function change(){
+			if(curIndex === aBtn.length){
+				curIndex = 0 ;
+			}else {
+				move(curIndex);
+				curIndex += 1;
+			}
+		}
+
+		function move(index) {
+			if(index > oLi.length-1){
+				index = 0 ;
+				iNow = index;
+			}
+			if(index < 0){
+				index = oLi.length -1;
+				iNow = index;
+			}
+
+			for( var n = 0 ;n<aBtn.length; n++) {
+				aBtn[n].className = "";
+			}
+			aBtn[index].className = "active";
+			oUl[0].style.left = -index*baseWidth + "px"
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@r:50rem;
+
+body {
+  margin:0;
+}
+a {
+	text-decoration :none;
+}
+
+img {
+	vertical-align: top;
+}
+
+::-webkit-input-placeholder{
+	color: #fff;
+}
+
+ul,li{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+/*头部区域*/
+
+#offLine {
+	#header {
+		height: 84/@r;
+		background: #000;
+		position:relative;
+		text-align: center;
+		color: #fff;
+		line-height: 84/@r;
+		font-size: 36/@r;
+		a{
+			position:absolute;
+			top:0;
+			width:133/@r;
+			height:84/@r;
+			color: #fff;
+			text-align:center;
+			line-height: 84/@r;
+			font-size:32/@r;
+			.glyphicon-menu-left{
+				font-size:39/@r;
+				vertical-align:middle;
+				margin-top: -2px;
+			}
+		}
+		.back{
+			left: 0;
+		}
+		.option{
+			height: 104/@r;
+			right: 0;
+			.glyphicon-option-horizontal{
+				font-size:46/@r;
+				vertical-align: middle;
+			}
+		}
+	}
+	
+
+	/*搜索区域*/
+
+	#search {
+		height: 112/@r;
+		background: #f44444;
+		position: relative;
+		.marker {
+			float: left;
+			height: 112/@r;
+			width: 113/@r;
+			font-size: 24/@r;
+			color: #fff;
+			line-height: 158/@r;
+			.glyphicon-map-marker{
+				top: -28/@r;
+				left: 40/@r;
+				font-size: 37/@r;
+			}
+		}
+		.search {
+			height:112/@r;
+			width: 527/@r;
+			float: left;
+			input {
+				width: 527/@r;
+				border: none;
+				outline: none;
+				height: 57/@r;
+				margin-top: 27/@r;
+				background: #f44444;
+				padding-left: 80/@r;
+				font-size: 24/@r;
+				box-sizing: border-box;
+			}
+			img{
+				position: relative;
+				top: -10/@r;
+				width: 527/@r;
+				height: 10px;
+			}
+			.glyphicon-search{
+				position: absolute;
+				top: 37/@r;
+				left: 142/@r;
+				color: #fff;
+				font-size: 40/@r;
+			}
+		}
+		.right{
+			float: right;
+			width: 101/@r;
+			height: 111/@r;
+			text-align: center;
+			padding-top:36/@r;
+			box-sizing: border-box;
+			img{
+				width:42/@r;
+				height: 39/@r;
+			}
+		}
+	}
+
+	/*轮播图*/
+	#carousel{
+		height: 399/@r;
+		box-shadow: 0px 0px 5px #c1c1c1;
+		position: relative;
+		overflow: hidden;
+		ul{
+			position: absolute;
+			left:0;
+			top:0;
+			height: 399/@r;
+			li{
+				overflow: hidden;
+				float: left;
+			}
+		}
+		.ico {
+			width: 100%;
+			height: 20/@r;
+			text-align: center;
+			position: absolute;
+			left: 0;
+			bottom: 22px;
+			z-index: 1;
+			a{
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin: 0px 5px;
+				border: 1px solid #f75247;
+				border-radius: 50%;
+			}
+			.active{
+					background: #f75247;
+				}
+		}
+		img{ 
+			display: block;
+			height: 399/@r;
+		}
+	}
+
+}
+
+
