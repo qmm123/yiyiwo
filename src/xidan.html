@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+
+	<!-- <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750,user-scalable=no,initial-scale=1.0"> -->
+	<title></title>
+	<link rel="stylesheet" href="scripts/css/bootstrap.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<script>
+		(function(){
+			var w = window.screen.width;
+			var targetW = 750;
+			var scale = w / targetW;
+			var meta = document.createElement("meta");
+			meta.name="viewport";
+			meta.content = "user-scalable=no,initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale+"";
+			document.head.appendChild(meta);
+		})()
+	</script>
+</head>
+<body>
+	<div id="xidan">
+		<header class="header">
+			<a href="javascript:;"><img src="images/back.png" alt=""></a>
+			汉拿山(西单万达店)
+			<a href="javascript:;"><img src="images/news.png" alt=""></a>
+		</header>
+		<section class="hot">
+			<div class="banner"><img src="images/banner.png" alt=""></div>
+			<div class="text">
+				<span class="name">汉拿山 ( 西单万达店 )</span>
+				<span class="sore">本店不支持外卖配送</span>
+			</div>
+		</section>
+		<section class="main">
+			<div><a href="javascript:;" class="active">商品<span class="glyphicon glyphicon-triangle-bottom"></span></a><a href="javascript:;">商家<span class="glyphicon glyphicon-triangle-bottom"></span></a></div>
+		</section>
+	</div>
+</body>
+</html>
