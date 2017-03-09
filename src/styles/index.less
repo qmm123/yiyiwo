@@ -346,12 +346,13 @@ ul,li{
 /*汉拿山（西单万达店）*/
 #xidan{
 	margin: 0 auto;
+	overflow: hidden;
 	.header{
 		width: 100%;
-		height: 110px;
+		height: 116px;
 		background: #f44444;
 		text-align: center;
-		line-height: 110px;
+		line-height: 116px;
 		font-size: 32px;
 		color: #fff;
 		a:nth-child(1){
@@ -380,7 +381,7 @@ ul,li{
 		}
 	}
 	.hot{
-		height: 258px;
+		height: 260px;
 		background: url("../images/bannerBj.jpg");
 		.banner{
 			width: 202px;
@@ -409,7 +410,7 @@ ul,li{
 			}
 		}
 	}
-	.main{
+	.nav{
 		height: 78px;
 		a{
 			display: inline-block;
@@ -439,5 +440,297 @@ ul,li{
 			border-right: 1px solid #e7e7e7;
 		}
 	}
+	.content{
+		font-size: 0;
+		position: absolute;
+		top: 454px;
+		bottom: 200px;
+		overflow: hidden;
+		.content-left{
+			width: 176px;
+			float: left;
+			height: 100%;
+			display: inline-block;
+			.list{
+				display: table;
+				width: 100%;
+				.list-item{
+					line-height: 82px;
+					height: 82px;
+					width: 100%;
+					text-align: center;
+					vertical-align: middle;
+					font-size: 26px;
+					color: #5f5f5f;
+					background: #f2f2f2;
+					border-bottom: 2px solid #dedede;
+					img{
+						width: 36px;
+						margin-right: 10px;
+						vertical-align: middle;
+						margin-top: -5px;
+					}
+				}
+				.list-item.active{
+					background: #fff;
+					border-bottom: none;
+				}
+			}
+		}
+		.content-right{
+			display: inline-block;
+			height: 100%;
+			float: left;
+			.list{
+				.list-item{
+					width: 574px;
+					.title{
+						background: #f7f7f7;
+						height: 70px;
+						line-height: 70px;
+						.name{
+							font-size: 24px;
+							color: #5f5f5f;
+							margin-right: 32px;
+						}
+						.name:before{
+							content: '';
+							display: inline-block;
+							height: 22px;
+							width: 8px;
+							background: #f44444;
+							border-radius: 5px;
+							margin-left: 22px;
+							margin-right: 10px;
+						}
+						.desc{
+							font-size: 22px;
+							color: #a0a0a0;
+						}
+					}
+					ul{
+						li{
+							a{
+								display: block;
+								position: relative;
+								.text{
+									display: inline-block;
+									.name{
+										display: block;
+										line-height: 95px;
+										font-size: 35px;
+										margin-bottom: 8px;
+										color: #0e0e0e;
+									}
+									.price{
+										display: block;
+										font-size: 28px;
+										line-height: 76px;
+										color: #fb4f45;
+										font-weight: bold;
+									}
+								}
+								img{
+									width: 130px;
+									display: inline-block;
+									margin: 30px 24px 0 20px;
+								}
+								.cart{
+									font-size: 0;
+									position: absolute;
+									right: 30px;
+									bottom: 16px;
+									vertical-align: middle;
+									span{
+										display: inline-block;
+										float: left;
+									}
+									.cart-decrease-wrapper{
+										display: none;
+										transition: all 0.3s linear;
+									}
+									.cart-decrease{
+										background: url("../images/decrease.png") no-repeat;
+										width: 52px;
+										height: 52px;
+										padding: 8px;
+										margin-right: 14px;
+										transition: all 0.3s linear;
+										background-position: center center;
+									}
+									.cart-add{
+										background: url("../images/add.png") no-repeat;
+										width: 52px;
+										height: 52px;
+										padding: 8px;
+										background-position: center center;
+									}
+									.cart-count{
+										width: 72px;
+										height: 46px;
+										border: 2px solid #dedede;
+										border-radius: 5px;
+										margin-right: 14px;
+										font-size: 28px;
+										color: #5f5f5f;
+										text-align: center;
+										line-height: 46px;
+										display: none;
+										margin-top: 8px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.shopCart{
+		position: fixed;
+		left: 0;
+		bottom: 100px;
+		height: 100px; 
+		font-size: 0;
+		z-index: 500;
+		.shopCartL{
+			float: left;
+			display: inline-block;
+			width: 578px;
+			background: #646469;
+			height: 100px;
+			.square-wrap{
+				width: 114px;
+				height: 114px;
+				position: absolute;
+				left: 28px;
+				top: -18px;
+				border-radius: 50%;
+				background: #56565e;
+				padding: 5px;
+				box-sizing: border-box;
+				.square{
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					background: #2acb7b;
+					text-align: center;
+					line-height: 104px;
+					.glyphicon-shopping-cart{
+						color: #fff;
+						font-size: 64px;
+						vertical-align: middle;
+					}
+					.num{
+						width: 46px;
+						height: 30px;
+						border-radius: 16px;
+						background: #f44444;
+						color: #fff;
+						display: inline-block;
+						position: absolute;
+						top: 0;
+						right: 0;
+						font-size: 24px;
+						text-align: center;
+						line-height: 30px;
+						display: none;
+					}	
+				}
+			}
+			.text{
+				margin-left: 152px;
+				.name{
+					font-size: 20px;
+					color: #fff;
+					span{
+						font-size: 44px;
+						margin-left: 3px;
+					}
+				}
+				.desc{
+					font-size: 22px;
+					color: #fff;
+					span{}
+				}
+			}
+		}
+		.shopCartR{
+			float: left;
+			width: 172px;
+			background: #f44444;
+			display: inline-block;
+			height: 100%;
+			font-size: 26px;
+			color: #fff;
+			text-align: center;
+			line-height: 100px;
+		}
+	}
 }
 
+
+/*底部*/
+#footer{
+		width: 724px;
+		margin: 0 auto;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 500;
+		background: #fff;
+		ul{
+			li{
+				width: 20%;
+				display: inline-block;
+				float: left;
+				border-top: 1px solid #e7e7e7;
+				box-sizing: border-box;
+				a{
+					display: block;
+					font-size: 24px;
+					color: #8a8a8a;
+					height: 100px;
+					text-align: center;
+					box-sizing: border-box;
+					overflow: hidden;
+				}
+				a:before{
+					content:"";
+					display: block;
+					width: 34px;
+					height: 34px;
+					background-image: url("../images/footer.png");
+					background-repeat: no-repeat;
+					background-size: cover;
+					margin: 20px auto 5px;
+				}
+			}
+			li:nth-child(2) a:before{
+					background-position:-166px 0;
+			}
+			li:nth-child(3) a:before{
+					background-position:-327.5px 0;
+			}
+			li:nth-child(4) a:before{
+					background-position:-487px 0;
+			}
+			li:nth-child(5) a:before{
+					background-position:-634px 0;
+			}
+		}
+	}
+
+.ball-wrapper{
+	position: fixed;
+	bottom: 142px;
+	left: 67px;
+	z-index: 300;
+	.ball{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #f44444;
+
+	}
+}
