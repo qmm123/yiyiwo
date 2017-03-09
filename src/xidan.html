@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="scripts/css/bootstrap.css">
 	<link rel="stylesheet" href="styles/index.css">
 	<script>
-		(function(){
+		/*(function(){
 			var w = window.screen.width;
 			var targetW = 750;
 			var scale = w / targetW;
@@ -25,7 +25,7 @@
 			meta.name="viewport";
 			meta.content = "user-scalable=no,initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale+"";
 			document.head.appendChild(meta);
-		})()
+		})()*/
 	</script>
 </head>
 <body>
@@ -43,9 +43,10 @@
 			</div>
 		</section>
 		<section class="nav">
-			<div><a href="javascript:;" class="active">商品<span class="glyphicon glyphicon-triangle-bottom"></span></a><a href="javascript:;">商家<span class="glyphicon glyphicon-triangle-bottom"></span></a></div>
+			<div><a href="javascript:;" class="foods active">商品<span class="glyphicon glyphicon-triangle-bottom"></span></a><a href="javascript:;" class="seller">商家<span class="glyphicon glyphicon-triangle-bottom"></span></a></div>
 		</section>
-		<section class="content">
+		<div class="food-wrapper">
+			<section class="content">
 			<div class="content-left">
 				<ul class="list">
 					<li class="list-item active">
@@ -501,23 +502,8 @@
 						</ul>
 					</li>
 				</ul>
-			</div>
-		</section>
-		<section class="shopCart">
-			<div class="shopCartL">
-				<div class="square-wrap">
-					<div class="square">
-						<span class="glyphicon glyphicon-shopping-cart"></span>
-						<span class="num"></span>
-					</div>
 				</div>
-				<div class="text">
-					<div class="name">￥<span>56</span></div>
-					<div class="desc">配送费 ￥<span>5</span>元</div>
-				</div>
-			</div>
-			<div class="shopCartR">去结算</div>
-		</section>
+			</section>
 		<!--小球-->
 			<div class="ball-wrapper">
 				<div class="ball"></div>
@@ -534,6 +520,146 @@
 			<div class="ball-wrapper">
 				<div class="ball"></div>
 			</div>
+			<section class="shopCart">
+			<div class="shopCartL">
+				<div class="square-wrap">
+					<div class="square">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+						<span class="num"></span>
+					</div>
+				</div>
+				<div class="text">
+					<div class="name">￥<span>56</span></div>
+					<div class="desc">配送费 ￥<span>5</span>元</div>
+				</div>
+			</div>
+			<div class="shopCartR">去结算</div>
+		</section>
+		</div>
+		<div class="seller-wrapper">
+				<ul>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+				<li class="list-item"><div class="title"><img src="images/Shead1.jpg" alt=""><span class="name">李***8</span></div>
+					<div class="desc">是典型的灶台鸡灶台鱼，建议小伙伴一定要去吃的</div>
+					<div class="time">2017-01-12</div>
+					<div class="star-wrapper">
+						<div class="star-list">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 		<footer id="footer">
 			<ul>
 				<li><a href="javascript:;">首页</a></li>
