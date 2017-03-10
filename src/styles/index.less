@@ -816,11 +816,12 @@ ul,li{
 	#shopCart{
 		.content-wrap{
 			position: absolute;
-			top:112/@r; 
+			top:114/@r; 
 			bottom: 100/@r;
 			left: 0;
 			right: 0;
 			font-size: 0;
+			overflow: hidden;
 			.list{
 				.list-item{
 					position: relative;
@@ -976,6 +977,7 @@ ul,li{
 									width: 466/@r;
 									float: left;
 									padding: 0 26/@r 0 20/@r;
+									display: none;
 									.center{
 
 										.cartWrap{
@@ -1069,6 +1071,66 @@ ul,li{
 						}
 					}
 				}
+			}
+		}
+		.allCount{
+			position: fixed;
+			left: 0;
+			bottom: 100/@r;
+			height: 100/@r;
+			background: #fff;
+			z-index: 4;
+			.left{
+				float: left;
+				width: 258/@r;
+				height: 100%;
+				.toggle-wrap{
+					display: inline-block;
+					height: 100%;
+					float:left;
+					width: 92/@r;
+					.toggle{
+						display: inline-block;
+						width: 36/@r;
+						height: 36/@r;
+						border: 1px solid #c1c1c1;
+						position: absolute;
+						top: 48/@r;
+						left: 30/@r
+					}
+					.toggle.active{
+						.glyphicon-ok{
+						
+						}
+					}
+				}
+				.all{
+
+				}
+				.line{
+
+				}
+				.remove{
+
+				}
+
+			}
+			.center{
+				float: left;
+				.title{
+					.icon{
+
+					}
+					.num{
+
+					}
+				}
+				.desc{
+
+				}
+			}
+			.right{
+				float: left;
 			}
 		}
 	}
