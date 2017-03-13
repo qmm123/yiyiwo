@@ -933,22 +933,29 @@ ul,li{
 
 							}
 							.shop{
-								padding: 30/@r 0 0 10/@r;
+								height: 100%;
 								width: 658/@r;
 								float: left;
 								box-sizing: border-box;
 								display: inline-block;
+								position: relative;
 								img{
 									width: 180/@r;
 									height: 180/@r;
 									border-radius: 5/@r;
 									float: left;
+									display: inline-block;
+									margin-top: 30/@r;
 								}
 								.edit{
-									padding: 0 26/@r 0 20/@r;
+									padding: 30/@r 26/@r 0 20/@r;
+									height: 100%;
 									box-sizing: border-box;
 									width: 466/@r;
-									float: left;
+									position: absolute;
+									left: 190/@r;
+									z-index: 9;
+									background: #fff;
 									.name{
 										height: 84/@r;
 										font-size: 24/@r;
@@ -974,10 +981,13 @@ ul,li{
 								}
 								.finish{
 									box-sizing: border-box;
+									padding: 30/@r 26/@r 0 20/@r;
+									height: 100%;
 									width: 466/@r;
-									float: left;
-									padding: 0 26/@r 0 20/@r;
-									display: none;
+									position: absolute;
+									left: 190/@r;
+									z-index: 8;
+									background: #fff;
 									.center{
 
 										.cartWrap{
@@ -1040,11 +1050,11 @@ ul,li{
 									}
 									.right{
 										position: absolute;
-										top: -2px;
-										right: 0;
+										top: 0px;
+										right: 0px;
 										.heart{
 											width: 120/@r;
-											height: 120/@r;
+											height: 118/@r;
 											background: #f44444;
 											margin-bottom: 2px;
 											text-align: center;
@@ -1076,14 +1086,15 @@ ul,li{
 		.allCount{
 			position: fixed;
 			left: 0;
-			bottom: 100/@r;
+			bottom: 102/@r;
 			height: 100/@r;
 			background: #fff;
-			z-index: 4;
+			right: 0;
+			z-index: 13;
 			.left{
 				float: left;
-				width: 258/@r;
 				height: 100%;
+				line-height: 100%;
 				.toggle-wrap{
 					display: inline-block;
 					height: 100%;
@@ -1095,42 +1106,86 @@ ul,li{
 						height: 36/@r;
 						border: 1px solid #c1c1c1;
 						position: absolute;
-						top: 48/@r;
-						left: 30/@r
+						top: 30/@r;
+						left: 30/@r;
+						font-size: 0;
 					}
-					.toggle.active{
-						.glyphicon-ok{
-						
+						.glyphicon-ok.active{
+							border: 1px solid #f44444;
+							color: #f44444;
+							font-size: 26/@r;
+							text-align: center;
+							line-height: 36/@r;
+							font-weight: normal;
 						}
-					}
+				}
+				.all-wrap{
+					float: left;
+					width: 96/@r;
+					height: 100%;
 				}
 				.all{
-
+					font-size: 24/@r;
+					color: #8a8a8a;
+					display: inline-block;
+					margin-left: 24/@r;
+					margin-top: 26/@r;
 				}
 				.line{
-
+					display: block;
+					float: left;
+					width: 1/@r;
+					margin-top: 40/@r;
+					height: 24/@r;
+					background: #e7e7e7;
+				}
+				.remove-wrap{
+					float: left;
+					width: 96/@r;
+					height: 100%;
 				}
 				.remove{
-
+					font-size: 24/@r;
+					color: #f44444;
+					display: inline-block;
+					margin-left: 24/@r;
+					margin-top: 26/@r;
 				}
 
 			}
 			.center{
 				float: left;
+				height: 100%;
+				width: 246/@r;
+				text-align: right;
+				font-size: 0;
 				.title{
+					margin-top: 18/@r;
+					font-size: 24/@r;
+					color: #8a8a8a;
 					.icon{
-
+						font-size: 18/@r;
+						color: #f44444;
 					}
 					.num{
-
+						font-size: 26/@r;
+						color: #f44444;
 					}
 				}
 				.desc{
-
+					font-size: 22/@r;
+					color: #8a8a8a;
 				}
 			}
 			.right{
-				float: left;
+				float: right;
+				height: 100%;
+				width: 186/@r;
+				line-height: 100/@r;
+				background: #f44444;
+				color: #fff;
+				text-align: center;
+				font-size: 28/@r;
 			}
 		}
 	}
