@@ -4952,7 +4952,7 @@ ul,li{
 				display: inline-block;
 				width: 34/@r;
 				height: 34/@r;
-				background: url('../images/momentCenter6.png') no-repeat;
+				background: url('../images/personal5.png') no-repeat;
 				background-size: contain;
 				vertical-align: middle;
 				margin-right: 5/@r;
@@ -5078,7 +5078,203 @@ ul,li{
 	}
 }
 
+/*立即开店*/
+#openShop{
+	.open-shop-content{
+		.title{
+			width: 690/@r;
+			margin: 0 auto;
+			height: 108/@r;
+			line-height: 108/@r;
+			.desc{
+					font-size: 0;
+					float: left;
+					width: 390/@r;
+					span{
+						font-size: 24/@r;
+						color: #000;
+					}
+					span:nth-child(1){
+						margin-right: 14/@r;
+					}
+					.line-select{
+						display: inline-block;
+						width: 44/@r;
+						height: 10/@r;
+						background: url('../images/line-select.png') no-repeat;
+						background-size: contain;
+						margin-right: 8/@r;
+						margin-bottom: 6/@r;
+					}
+					.line{
+						display: inline-block;
+						width: 44/@r;
+						height: 10/@r;
+						background: url('../images/line.png') no-repeat;
+						background-size: contain;
+						margin-right: 8/@r;
+						margin-bottom: 6/@r;
+					}
+			}
+		}
+		.money{
+			width: 300/@r;
+			float: left;
+			font-size: 0;
+			text-align: right;
+			.old{
+				font-size: 22/@r;
+				color: #adadad;
+				display: inline-block;
+			}
+			.now{
+				font-size: 28/@r;
+				margin-right: 18/@r;
+				display: inline-block;
+				color: #f44444;
+				span{
+					font-size: 22/@r;
+				}
+			}
+		}
+		.list{
+			ul{
+				.list-item{
+					width: 690/@r;
+					margin: 0 auto;
+					font-size: 0;
+					position: relative;
+					overflow: hidden;
+					margin-bottom: 30/@r;
+					.titles{
+						width: 623/@r;
+						border: 1px solid #e7e7e7;
+						border-right: none;
+						float: left;
+						height: 64/@r;
+						line-height: 64/@r;
+						font-size: 24/@r;
+						color: #5f5f5f;
+						.glyphicon-menu-right{
 
+						}
+					}
+					.titles:before{
+						float: left;
+						content: '';
+						display: inline-block;
+						width: 34/@r;
+						height: 39/@r;
+						padding: 12/@r 16/@r;
+						background: url('../images/open-shop1.png') no-repeat;
+						background-size: contain;
+						background-position: center;
+						background-origin: content-box;
+					}
+					.right{
+						width: 66/@r;
+						height: 68/@r;
+						background: #f44444;
+						text-align: center;
+						line-height: 66/@r;
+						font-size: 30/@r;
+						color: #fff;
+						position: absolute;
+						right: 0;
+						top: 0;
+					}
+					.glyphicon-menu-right{
+						transition: all 0.5s;
+						font-weight: 200;
+					}
+					.right.active{
+						background: #e7e7e7;
+					}
+					.contents{
+						float: left;
+						padding: 16/@r 24/@r 0 22/@r;
+						font-size: 22/@r;
+						color: #afafaf;
+						line-height: 36/@r;
+						overflow: hidden;
+						box-sizing: border-box;
+						display: none;
+					}
+				}
+				.list-item:nth-child(2){
+					.titles:before{
+						background: url('../images/open-shop2.png') no-repeat;
+						background-size: contain;
+						background-position: center;
+						background-origin: content-box;
+					}
+				}
+				.list-item:nth-child(3){
+					.titles:before{
+						background: url('../images/open-shop3.png') no-repeat;
+						background-size: contain;
+						background-position: center;
+						background-origin: content-box;
+					}
+				}
+				.list-item:nth-child(4){
+					.titles:before{
+						background: url('../images/open-shop4.png') no-repeat;
+						background-size: contain;
+						background-position: center;
+						background-origin: content-box;
+					}
+				}
+				.list-item:last-child{
+					margin-bottom: 112/@r;
+				}
+			}
+		}
+		.pay{
+			.title{
+				font-size: 24/@r;
+				color: #8a8a8a;
+				text-align: center;
+				margin-bottom: 66/@r;
+				.icon{
+					font-size: 16/@r;
+					color: #f44444;
+				}
+				.num{
+					font-size: 32/@r;
+					color: #f44444;
+				}
+			}
+			.square{
+
+				display: block;
+				width: 352/@r;
+				height: 80/@r;
+				margin: 0 auto;
+				background: #04bf05;
+				border-radius: 36/@r;
+				text-align: center;
+				font-size: 0;
+				line-height: 80/@r;
+				span{
+					font-size: 28/@r;
+					color: #fff;
+					vertical-align: middle;
+				}
+				span:before{
+					content: '';
+					display: inline-block;
+					width: 42/@r;
+					height: 38/@r;
+					background: url('../images/openShop6.png') no-repeat;
+					background-size: contain;
+					vertical-align: middle;
+					margin-right: 14/@r;
+				}
+			}
+		}
+	}
+}
 
 /*底部*/
 #footer{
