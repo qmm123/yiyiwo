@@ -5329,6 +5329,7 @@ ul,li{
 						font-size: 24/@r;
 						border-bottom-left-radius: 30/@r;
 						border-bottom-right-radius: 30/@r;
+						padding-bottom: 3/@r;
 					}
 				}
 			}
@@ -5403,13 +5404,35 @@ ul,li{
 					}
 					.text{
 						height: 170/@r;
-						line-height: 170/@r;
+						
 						font-size: 24/@r;
 						color: #5f5f5f;
 						.name{
 							float: left;
+							line-height: 170/@r;
+							.store{
+								display: inline-block;
+								width: 64/@r;
+								height: 36/@r;
+								text-align: center;
+								line-height: 36/@r;
+								border: 1px solid #f44444;
+								color: #f44444;
+								font-size: 24/@r;
+								margin-top: 66/@r;
+								margin-left: 18/@r;
+							}
+						}
+						.all-wrap{
+							line-height: 44/@r;
+							margin-top: 40/@r;
+							float: right;
+							.all{
+
+							}
 						}
 						.time{
+							line-height: 170/@r;
 							float: right;
 						}
 					}
@@ -5426,6 +5449,10 @@ ul,li{
 						font-size: 24/@r;
 						border-bottom-left-radius: 30/@r;
 						border-bottom-right-radius: 30/@r;
+						padding-bottom: 3/@r;
+					}
+					.store{
+						position: absolute;
 					}
 				}
 			}
