@@ -5126,6 +5126,7 @@ ul,li{
 				font-size: 22/@r;
 				color: #adadad;
 				display: inline-block;
+				text-decoration: line-through;
 			}
 			.now{
 				font-size: 28/@r;
@@ -5227,6 +5228,37 @@ ul,li{
 				}
 				.list-item:last-child{
 					margin-bottom: 112/@r;
+				}
+			}
+		}
+		.list1{
+			ul{
+				overflow: hidden;
+				padding: 18/@r 6/@r;
+				border-top: 1px solid #e7e7e7;
+				border-bottom: 1px solid #e7e7e7;
+				width: 690/@r;
+				margin: 0 auto 170/@r;
+				.item{
+					width: 50%;
+					float: left;
+					text-align: left;
+					font-size: 0;
+					span{
+						font-size: 24/@r;
+						line-height: 48/@r;
+						color: #8a8a8a;
+
+					}
+					span:before{
+						content: '';
+						display: inline-block;
+						width: 8/@r;
+						height: 8/@r;
+						border: 2px solid #c9c9c9;
+						border-radius: 50%;
+						margin-right: 8/@r;
+					}
 				}
 			}
 		}
