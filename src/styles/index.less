@@ -111,6 +111,7 @@ ul,li{
 				width: 105/@r;
 			}
 			a{
+				display: block;
 				span{
 					color: #7a7a7a;
 					font-size: 25/@r;
@@ -3433,19 +3434,19 @@ ul,li{
 			}
 			.list-item:nth-child(2){
 				.icon:before{
-					background: url('../images/shoppingAddress2.png') no-repeat;
+					background: url('../images/personalData1.png') no-repeat;
 					background-size: contain;
 				}
 			}
 			.list-item:nth-child(3){
 				.icon:before{
-					background: url('../images/shoppingAddress3.png') no-repeat;
+					background: url('../images/personalData2.png') no-repeat;
 					background-size: contain;
 				}
 			}
 			.list-item:nth-child(4){
 				.icon:before{
-					background: url('../images/shoppingAddress4.png') no-repeat;
+					background: url('../images/personalData3.png') no-repeat;
 					background-size: contain;
 				}
 			}
@@ -3474,6 +3475,7 @@ ul,li{
 	}
 
 	.new-add{
+		display: block;
 		width: 352/@r;
 		height: 82/@r;
 		line-height: 82/@r;
@@ -6326,6 +6328,16 @@ ul,li{
 			li:nth-child(1) a:before{
 				width: 37/@r;
 			}
+			li:nth-child(1).active a{
+				color: #f44444;
+			}
+			li:nth-child(1).active a:before{
+					background-image: url("../images/footer-select1.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: 0 0;
+					color: #f44444;
+			}
 			li:nth-child(2) a:before{
 				width: 37/@r;
 				background-image: url("../images/footer2.png");
@@ -6364,7 +6376,9 @@ ul,li{
 				background-size: contain;
 			}
 			li:nth-child(5) a:before{
-					background-position:-636/@r 0;
+				background-image: url("../images/footer5.png");
+				background-repeat: no-repeat;
+				background-size: contain;
 			}
 			li:nth-child(5).active a{
 				color: #f44444;
