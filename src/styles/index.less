@@ -280,6 +280,148 @@ ul,li{
 #xidan{
 	margin: 0 auto;
 	overflow: hidden;
+	.xidan{
+	}
+	.xidanDetail{
+		display: none;
+	}
+	.detail-hot{
+		width: 750/@r;
+		position: relative;
+		img:nth-child(1){
+			display: block;
+		}
+		img{
+			display: none;
+			width: 750/@r;
+			max-height: 380/@r;
+		}
+		ul{
+			font-size: 0;
+			position: absolute;
+			bottom: 40/@r;
+			text-align: center;
+			width: 750/@r;
+			li{
+				display: inline-block;
+				width: 14/@r;
+				height: 14/@r;
+				margin-right: 8/@r;
+				border: 1px solid #fff;
+				border-radius: 50%;
+			}
+			li.active{
+				background: #fff;
+			}
+		}
+	}
+	.detail-wrap{
+		.detail-title{
+			font-size: 0;
+			position: relative;
+			h2{
+				font-size: 32/@r;
+				color: #5f5f5f;
+				padding: 0;
+				margin: 0;
+				padding: 38/@r 0 28/@r 30/@r;
+			}
+			.price{
+				font-size: 0;
+				color: #f44444;
+				padding: 0 0 48/@r 30/@r;
+				border-bottom: 1px solid #e7e7e7;
+				.icon{
+					font-size: 20/@r;
+				}
+				.num{
+					font-size: 28/@r;
+				}
+			}
+			.cart{
+									font-size: 0;
+									position: absolute;
+									right: 14/@r;
+									bottom: 20/@r;
+									vertical-align: middle;
+									span{
+										display: inline-block;
+										float: left;
+									}
+									.cart-decrease-wrapper{
+										display: none;
+										transition: all 0.3s linear;
+									}
+									.cart-decrease{
+										background: url("../images/decrease.png") no-repeat;
+										width: 48/@r;
+										height: 48/@r;
+										padding: 16/@r;
+										background-origin: content-box;
+										margin-right: 14/@r;
+										transition: all 0.3s linear;
+										background-size: contain;
+										background-position: center center;
+									}
+									.cart-add{
+										background: url("../images/add.png") no-repeat;
+										width: 48/@r;
+										height: 48/@r;
+										padding: 16/@r;
+										background-origin: content-box;
+										background-size: contain;
+										background-position: center center;
+									}
+									.cart-count{
+										width: 72/@r;
+										height: 46/@r;
+										border: 2/@r solid #dedede;
+										border-radius: 5/@r;
+										margin-right: 14/@r;
+										font-size: 28/@r;
+										color: #5f5f5f;
+										text-align: center;
+										line-height: 46/@r;
+										display: none;
+										margin-top: 15/@r;
+									}
+			}
+		}
+		.detail-content{
+			font-size: 0;
+			.content-header{
+				font-size: 0;
+				span{
+					display: inline-block;
+					margin-top: 30/@r;
+					margin-bottom: 30/@r;
+					font-size: 26/@r;
+					color: #5f5f5f;
+					vertical-align: middle;
+				}
+				span:before{
+					content: '';
+					display: inline-block;
+					width: 10/@r;
+					height: 26/@r;
+					margin-left: 32/@r;
+					margin-right: 14/@r;
+					margin-top: -8/@r;
+					background: #f44444;
+					border-radius: 5/@r;
+					vertical-align: middle;
+				}
+			}
+			ul{
+				padding-left: 53/@r;
+				li{
+					font-size: 24/@r;
+					color: #5f5f5f;
+					line-height: 44/@r;
+				}
+			}
+		}
+	}
 	.hot{
 		height: 260/@r;
 		background: url("../images/bannerBj.jpg");
@@ -411,6 +553,55 @@ ul,li{
 					}
 					ul{
 						li{
+							position: relative;
+							.cart{
+									font-size: 0;
+									position: absolute;
+									right: 14/@r;
+									bottom: 0/@r;
+									vertical-align: middle;
+									span{
+										display: inline-block;
+										float: left;
+									}
+									.cart-decrease-wrapper{
+										display: none;
+										transition: all 0.3s linear;
+									}
+									.cart-decrease{
+										background: url("../images/decrease.png") no-repeat;
+										width: 48/@r;
+										height: 48/@r;
+										padding: 16/@r;
+										margin-right: 14/@r;
+										background-origin: content-box;
+										transition: all 0.3s linear;
+										background-size: contain;
+										background-position: center center;
+									}
+									.cart-add{
+										background: url("../images/add.png") no-repeat;
+										width: 48/@r;
+										height: 48/@r;
+										padding: 16/@r;
+										background-origin: content-box;
+										background-size: contain;
+										background-position: center center;
+									}
+									.cart-count{
+										width: 72/@r;
+										height: 46/@r;
+										border: 2/@r solid #dedede;
+										border-radius: 5/@r;
+										margin-right: 14/@r;
+										font-size: 28/@r;
+										color: #5f5f5f;
+										text-align: center;
+										line-height: 46/@r;
+										display: none;
+										margin-top: 15/@r;
+									}
+								}
 							a{
 								display: block;
 								position: relative;
@@ -435,52 +626,6 @@ ul,li{
 									width: 130/@r;
 									display: inline-block;
 									margin: 30/@r 24/@r 0 20/@r;
-								}
-								.cart{
-									font-size: 0;
-									position: absolute;
-									right: 30/@r;
-									bottom: 16/@r;
-									vertical-align: middle;
-									span{
-										display: inline-block;
-										float: left;
-									}
-									.cart-decrease-wrapper{
-										display: none;
-										transition: all 0.3s linear;
-									}
-									.cart-decrease{
-										background: url("../images/decrease.png") no-repeat;
-										width: 42/@r;
-										height: 42/@r;
-										padding: 8/@r;
-										margin-right: 14/@r;
-										transition: all 0.3s linear;
-										background-size: contain;
-										background-position: center center;
-									}
-									.cart-add{
-										background: url("../images/add.png") no-repeat;
-										width: 42/@r;
-										height: 42/@r;
-										padding: 8/@r;
-										background-size: contain;
-										background-position: center center;
-									}
-									.cart-count{
-										width: 72/@r;
-										height: 46/@r;
-										border: 2/@r solid #dedede;
-										border-radius: 5/@r;
-										margin-right: 14/@r;
-										font-size: 28/@r;
-										color: #5f5f5f;
-										text-align: center;
-										line-height: 46/@r;
-										display: none;
-										margin-top: 5/@r;
-									}
 								}
 							}
 						}
@@ -3347,6 +3492,22 @@ ul,li{
 				height: 252/@r;
 				border-bottom: none;
 			}
+			.items:nth-child(2){
+				.item{
+					.left:before{
+						background: url('../images/personal15.png') no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+			.items:nth-child(3){
+				.item{
+					.left:before{
+						background: url('../images/personal16.png') no-repeat;
+						background-size: contain;
+					}
+				}
+			}
 		}
 	}
 }
@@ -4114,6 +4275,7 @@ ul,li{
 						font-size: 30/@r;
 						color: #9a9a9a;
 						vertical-align: middle;
+						margin-top: -14/@r;
 					}
 				}
 			}
@@ -4176,9 +4338,8 @@ ul,li{
 	}
 	.shop{
 		ul{
-			height: 204/@r;
 			border-bottom: 1px solid #eee;
-			padding: 14/@r 30/@r;
+			padding: 24/@r 30/@r 34/@r;
 			box-sizing: border-box;
 			li{
 				font-size: 24/@r;
@@ -4207,6 +4368,50 @@ ul,li{
 			}
 		}
 	}
+	.pay{
+			.title{
+				font-size: 24/@r;
+				color: #8a8a8a;
+				text-align: center;
+				margin-bottom: 40/@r;
+				margin-top: 94/@r;
+				.icon{
+					font-size: 16/@r;
+					color: #f44444;
+				}
+				.num{
+					font-size: 32/@r;
+					color: #f44444;
+				}
+			}
+			.square{
+
+				display: block;
+				width: 352/@r;
+				height: 80/@r;
+				margin: 0 auto;
+				background: #04bf05;
+				border-radius: 36/@r;
+				text-align: center;
+				font-size: 0;
+				line-height: 80/@r;
+				span{
+					font-size: 28/@r;
+					color: #fff;
+					vertical-align: middle;
+				}
+				span:before{
+					content: '';
+					display: inline-block;
+					width: 42/@r;
+					height: 38/@r;
+					background: url('../images/openShop6.png') no-repeat;
+					background-size: contain;
+					vertical-align: middle;
+					margin-right: 14/@r;
+				}
+			}
+		}
 	.time{
 		ul{
 			height: 162/@r;
@@ -6374,6 +6579,16 @@ ul,li{
 				background-image: url("../images/footer4.png");
 				background-repeat: no-repeat;
 				background-size: contain;
+			}
+			li:nth-child(4).active a{
+				color: #f44444;
+			}
+			li:nth-child(4).active a:before{
+					background-image: url("../images/footer-select4.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: 0 0;
+					color: #f44444;
 			}
 			li:nth-child(5) a:before{
 				background-image: url("../images/footer5.png");
